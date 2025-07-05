@@ -1,0 +1,39 @@
+let moisture_pin = 4      // ADC pin for soil moisture sensor
+let pump_pin = 26          // Output pin to control pump/relay
+let moisture_threshold = 3000  // ADC value threshold
+let watering_duration = 5000   // Watering time in ms (5 seconds)
+let interval = 900000      // Check every 15 minutes (in ms)
+
+// Setup GPIOs
+gpio.setmode(pump_pin, gpio.OUTPUT)
+gpio.write(pump_pin, 0)  // Ensure pump is off
+
+function read_moisture()
+    let value = adc.read(moisture_pin)
+    print("Moisture ADC:", value)
+    return value
+end
+
+function water_plant()
+    print("Starting watering...")
+    gpio.write(pump_pin, 1)
+    delay(watering_duration)
+    gpio.write(pump_pin, 0)
+    print("Watering complete.")
+end
+
+function loop()
+    let moisture = read_moisture()
+    if moisture > moisture_threshold
+        print("Soil is dry. Watering...")
+        water_plant()
+    else
+        print("Soil is moist enough.")
+    end
+    delay(interval)  // Wait 15 minutes
+end
+
+// Start infinite loop
+while true
+    loop()
+end
