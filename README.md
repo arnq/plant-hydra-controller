@@ -20,11 +20,11 @@ Controller connects to the WIFI on start. Find the IP address of device in WIFI 
 
 ## TODO:
 
-•	Develop a mobile application for easier on-the-go access and real-time notifications
-•	Apply multiple zones 
-•	Design and develop an ergonomic enclosure
-•	Expand the smart learning algorithm 
-•	Integratesolar power support
-•	Add automatic tank refill functionality
-•	Enhancethe reliability of hardware components 
+-	Develop a mobile application for easier on-the-go access and real-time notifications
+-	Apply multiple zones 
+-	Design and develop an ergonomic enclosure
+-	Expand the smart learning algorithm 
+-	Integratesolar power support
+-	Add automatic tank refill functionality
+-	Enhancethe reliability of hardware components 
 
