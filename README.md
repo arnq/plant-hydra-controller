@@ -1,6 +1,4 @@
-# plant-hydra
-
-IoT Project of Automated Plant-Watering System
+# IoT Project of Automated Plant-Watering System (Controller part)
 
 ## Required hardware components:
 
@@ -18,4 +16,15 @@ The prototype uses an ESP32 development board with 18650 lithium-ion battery, a 
 
 ## Quick start
 
+Controller connects to the WIFI on start. Find the IP address of device in WIFI saettings, the Tasmota Web UI will be served on this IP.
+
 ## TODO:
+
+•	Develop a mobile application for easier on-the-go access and real-time notifications
+•	Apply multiple zones 
+•	Design and develop an ergonomic enclosure
+•	Expand the smart learning algorithm 
+•	Integratesolar power support
+•	Add automatic tank refill functionality
+•	Enhancethe reliability of hardware components 
+
