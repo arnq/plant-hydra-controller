@@ -16,7 +16,7 @@ The prototype uses an ESP32 development board with 18650 lithium-ion battery, a 
 
 ## Quick start
 
-Controller connects to the WIFI on start. Find the IP address of device in WIFI saettings, the Tasmota Web UI will be served on this IP.
+Controller connects to the WIFI on start. Find the IP address of device in WIFI settings, the Tasmota Web UI will be served on this IP.
 
 ## TODO:
 
